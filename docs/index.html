@@ -1,1 +1,33 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>MyCV</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.82ba14403e869993e49e.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="inline.58ee7ad2cf0a1b72d0b8.bundle.js"></script><script type="text/javascript" src="polyfills.8eba0ab53b5457105d75.bundle.js"></script><script type="text/javascript" src="vendor.0de1405c64afda35463b.bundle.js"></script><script type="text/javascript" src="main.beefa70cc33abc4df2b7.bundle.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyCV</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Polyfills -->
+  <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+
+  <!-- Update these package versions as needed -->
+  <script src="https://unpkg.com/zone.js@0.8.4?main=browser"></script>
+  <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+
+  <!-- This SystemJS configuration loads umd packages from the web -->
+  <script src="systemjs.config.server.js"></script>
+
+  <script>
+      System.import('main.js')
+          .catch(function(err){ console.error(err); });
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+</html>
